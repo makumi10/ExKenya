@@ -34,9 +34,9 @@ use App\Http\Controllers\PostsController;
 Route::get('/', function () {
     $counties = County::all()->random(4);
     $cities = City::all()->random(4);
-    $pois = ModelsPointOfInterest::all()->random(0);
+    $pois = ModelsPointOfInterest::all()->random(4);
     $hotels = Hotel::all()->random(4);
-    $restaurants = Restaurant::all()->random(0);
+    $restaurants = Restaurant::all()->random(4);
     return view('landing.welcome', compact('counties', 'cities' , 'pois' , 'hotels' , 'restaurants'));
 })->name('home');
 //Blog posts Routes
