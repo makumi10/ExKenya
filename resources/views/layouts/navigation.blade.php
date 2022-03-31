@@ -2,7 +2,7 @@
     {{-- Main NavBar --}}
     <div class="flex items-center  justify-between ">
         <a href="{{ route('home') }}" class="flex items-center ml-3">
-            <img src="{{ asset('favicon.ico') }}" alt="" class="w-12">
+            {{-- <img src="{{ asset('favicon.ico') }}" alt="" class="w-12"> --}}
             <span class="text-base uppercase font-bold ">Explore Kenya</span>
         </a>
         <div class="px-4 cursor-pointer ml-auto lg:hidden" id="navToggler" @click="open = !open">

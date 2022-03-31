@@ -67,8 +67,8 @@
                         <div class="">
                             <h3 class=" text-xl md:text-3xl lg:text-4xl font-bold tracking-wider mb-4 uppercase">join
                                 the Blog</h3>
-                            <p class="font-semibold text-base md:text-lg mt-4">join our community to get help, share
-                                experiences and get in touch with people around the world</p>
+                            <p class="font-semibold text-base md:text-lg mt-4">Join our community to get help, share
+                                experiences and get in touch with people around the country</p>
                         </div>
                         <div class=" mb-8">
                             @if (!auth()->user())
