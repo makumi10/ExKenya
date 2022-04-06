@@ -46,8 +46,8 @@
       <div class="logo">
        
         <a href="{{ route('home') }}" class="flex items-center ml-3">
-            <img src="{{ asset('favicon.ico') }}" alt="" class="w-12">
-            <span class="text-base uppercase font-bold " style="color:black;font-size: 1rem;line-height: 1.5rem;font-weight: 700;margin-right: 1.5rem;padding: 0.75rem;">Explore Kenya</span>
+            {{-- <img src="{{ asset('favicon.ico') }}" alt="" class="w-12"> --}}
+            <span class="text-base uppercase font-bold " style="color:black;font-size: 1rem;line-height: 1.5rem;font-weight: 700;margin-right: 1.5rem;padding: 0.75rem;">EXPLORE KENYA</span>
         </a>
       </div>
 
@@ -56,12 +56,12 @@
         @livewire('search-component')
 
                 <a href="{{ route('home') }}" class=" mr-6  p-3 text-base font-bold uppercase " style="color:black;font-size: 1rem;line-height: 1.5rem;font-weight: 700;margin-right: 1.5rem;padding: 0.75rem;">
-                    {{ __('Home') }}
+                    {{ __('HOME') }}
                 </a>
                 <a href="/blog" class=" mr-6  p-3  text-base font-bold uppercase" style="color:black;font-size: 1rem;line-height: 1.5rem;font-weight: 700;margin-right: 1.5rem;padding: 0.75rem;">
-                    {{ __('Blog') }}
+                    {{ __('BLOG') }}
                 </a>
-                <li class="nav-img" style="color:black;font-weight: bold;"><img style="width: 20px; " class="img-profile rounded-circle" src="{{ asset('storage/Users/' . Auth::user()->userImage()) }}"> {{ Auth::user()->name }}</li>  
+                <li class="nav-img uppercase" style="color:black;font-weight: bold;"><img style="width: 20px; " class="img-profile rounded-circle" src="{{ asset('storage/Users/' . Auth::user()->userImage()) }}"> {{ Auth::user()->name }}</li>  
           
         <i class="bi bi-list mobile-nav-toggle"></i>
         
